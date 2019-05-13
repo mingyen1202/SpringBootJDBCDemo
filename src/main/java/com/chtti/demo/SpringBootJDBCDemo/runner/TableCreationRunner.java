@@ -19,7 +19,8 @@ public class TableCreationRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 //        LOGGER.info("trying to create a table");
-//        template.execute("CREATE TABLE demo_table(id serial, username VARCHAR(255), password VARCHAR(255));");
+//        template.execute("DROP TABLE demo_table IF EXISTS");
+//        template.execute("CREATE TABLE demo_table(id serial, username VARCHAR(255), password VARCHAR(255))");
 //        LOGGER.info("after table creation");
     }
 }

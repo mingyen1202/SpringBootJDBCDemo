@@ -41,6 +41,7 @@ public class DataManipulationRunner implements CommandLineRunner {
 
     private void createDemoTable() {
         LOGGER.info("trying to create a table");
+        template.execute("DROP TABLE demo_table IF EXISTS");
         template.execute("CREATE TABLE demo_table(id serial, username VARCHAR(255), password VARCHAR(255));");
         LOGGER.info("after table creation");
     }
