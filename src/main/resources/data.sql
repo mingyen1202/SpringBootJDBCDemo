@@ -1,0 +1,1 @@
+insert into users(username, password) values('a', 'pwd1'), ('b', 'pwd2'), ('c', 'pwd3'), ('d', 'pwd4'), ('e', 'pwd5');
